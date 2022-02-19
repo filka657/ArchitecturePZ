@@ -1,0 +1,10 @@
+@startuml
+:Robot: --> (Reciving a command)
+:Robot: --> (Move on the left)
+:Robot: --> (Move forward)
+:Robot: --> (Clean the floor)
+:Robot: --> (Clean the wall)
+:Robot: --> (Paint over the graffiti on the wall)
+:Robot: --> (Paint over the graffiti on the floor)
+:Robot: --> (Return on his place)
+@enduml
