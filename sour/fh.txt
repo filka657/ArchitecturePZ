@@ -1,0 +1,3 @@
+UPDATE detail
+SET color = 'Yellow', weight = weight + 5
+WHERE city = 'Paris'
