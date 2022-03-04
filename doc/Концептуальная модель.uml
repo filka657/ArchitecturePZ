@@ -2,6 +2,8 @@
 Robot : charge() 
 Camera - PC : transition picture >
 Robot : stock paint
+User -- PC: Answer >
+PC -- User: Ask >
 PC : condition
 graffiti : position
 PC - Robot : reciving comand >
