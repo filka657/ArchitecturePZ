@@ -1,0 +1,25 @@
+@startuml
+class User{}
+
+class Camera{
+take_Picture()
+}
+
+Class PC{
+ask()
+answer()
+detect_graffiti()
+}
+Class Robot{
+move_forward()
+turn_left()
+clean()
+spray()
+Return on his place()
+}
+
+PC o-- Robot: has
+PC o-- Camera: has
+User o-- PC: has
+PC o-- User: has
+@enduml
