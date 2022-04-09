@@ -2,20 +2,20 @@
 (ERROR)
 (Off)
 (On)
-(Waiting)
-(Move_forward)
+(waiting)
+(move_forward)
 (turn_left)
-(Cleaning)
+(cleaning)
 
 (Off) -> (On) : press_start
-(On) -down-> (ERROR)
-(Cleaning) -down-> (ERROR)
-(Move_forward) -down-> (ERROR)
-(turn_left) -down-> (ERROR)
-(On) -up-> (Waiting) : waiting_command
-(Waiting) -down-> (Move_forward) : receive_move
-(Waiting) -left-> (Off) : press_stop
-(Move_forward) -right-> (turn_left) : receive_turn
-(turn_left) -right-> (Cleaning) : receive_clean
+(On) -down-> (ERROR) : on_error
+(cleaning) -down-> (ERROR) : cleaning_error
+(move_forward) -down-> (ERROR) : move_error
+(turn_left) -down-> (ERROR) : turn_error
+(On) -up-> (waiting) : waiting_command
+(waiting) -down-> (move_forward) : receive_move
+(waiting) -left-> (Off) : press_stop
+(move_forward) -right-> (turn_left) : receive_turn
+(turn_left) -right-> (cleaning) : receive_clean
 
 @enduml
