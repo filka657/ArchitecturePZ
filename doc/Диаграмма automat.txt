@@ -12,11 +12,10 @@
 (Cleaning) -down-> (ERROR)
 (Move_forward) -down-> (ERROR)
 (turn_left) -down-> (ERROR)
-(Spraying) -down-> (ERROR)
 (On) -up-> (Waiting) : waiting_command
 (Waiting) -down-> (Move_forward) : receive_move
-(Waiting) -down-> (turn_left) : receive_turn
-(Waiting) -down-> (Cleaning) : receive_clean
-(Waiting) -down-> (Spraying) : receive_spray
 (Waiting) -left-> (Off) : press_stop
+(Move_forward) -right-> (turn_left) : receive_turn
+(turn_left) -right -> (Cleaning) : receive_clean
+
 @enduml
