@@ -9,7 +9,7 @@
 
 (Off) -> (On) : press_start
 (On) -down-> (ERROR) : on_error
-(cleaning) -down-> (ERROR) : cleaning_error
+(cleaning) -down-> (ERROR) : clean_error
 (move_forward) -down-> (ERROR) : move_error
 (turn_left) -down-> (ERROR) : turn_error
 (On) -up-> (waiting) : waiting_command
