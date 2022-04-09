@@ -16,6 +16,6 @@
 (Waiting) -down-> (Move_forward) : receive_move
 (Waiting) -left-> (Off) : press_stop
 (Move_forward) -right-> (turn_left) : receive_turn
-(turn_left) -right -> (Cleaning) : receive_clean
+(turn_left) -right-> (Cleaning) : receive_clean
 
 @enduml
