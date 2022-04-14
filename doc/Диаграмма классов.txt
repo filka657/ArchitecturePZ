@@ -19,7 +19,6 @@ move_forward()
 turn_left()
 clean()
 spray()
-Return on his place()
 }
 
 PC o-- Robot: has
