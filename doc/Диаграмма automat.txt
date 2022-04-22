@@ -5,17 +5,20 @@
 (waiting)
 (move_forward)
 (turn_left)
-(cleaning)
+(spraying)
+(settingHand)
 
 (Off) -> (On) : press_start
 (On) -down-> (ERROR) : on_error
-(cleaning) -down-> (ERROR) : clean_error
+(spraying) -down-> (ERROR) : spray_error
 (move_forward) -down-> (ERROR) : move_error
 (turn_left) -down-> (ERROR) : turn_error
+(settingHand) -down-> (ERROR) : hand_error
 (On) -up-> (waiting) : waiting_command
 (waiting) -down-> (move_forward) : receive_move
 (waiting) -left-> (Off) : press_stop
 (move_forward) -right-> (turn_left) : receive_turn
-(turn_left) -right-> (cleaning) : receive_clean
+(turn_left) -right-> (settingHand) : set_hand
+(settingHand) -right-> (spraying) : receive_spray
 
 @enduml
