@@ -1,12 +1,37 @@
 @startuml
+
+class Event{}
+
+class Estate{}
+
+class CEvent{
+Event event;
+get_event()
+}
+
+class Hand{
+up()
+down()
+right()
+left()
+}
+
 class Spray{
 on()
 off()
 }
+
 class Picture{}
 
 class Camera{
 take_picture()
+}
+
+class Hand{
+up()
+down()
+left()
+right()
 }
 
 Class PC{
@@ -14,7 +39,9 @@ ask()
 answer()
 detect_graffiti()
 }
+
 Class Robot{
+int charge;
 on()
 off()
 move_forward()
@@ -23,8 +50,34 @@ clean()
 spray()
 }
 
-PC o-- Robot: has
-PC o-- Camera: has
-Robot *-- Spray: has
+Class System{
+PC pc;
+Camera cam;
+Robot robo;
+Hand hand;
+Spray spr;
+press_start()
+move()
+waiting()
+setHand()
+do_spray()
+turning()
+press_stop()
+}
+
+class RobotStates{
+Estate state;
+RobotStates()
+detectProcess()
+}
+
+RobotStates o-- System: has
+RobotStates o-- Estate: has
+CEvent o-- Event: has
+System o-- PC: has
+System o-- Camera: has
+System o-- Robot: has
+System o-- Hand: has
+System o-- Spray: has
 Camera o-- Picture: has
 @enduml
