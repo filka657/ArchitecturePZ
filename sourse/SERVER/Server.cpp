@@ -27,7 +27,7 @@ int __cdecl main(void)
     struct addrinfo hints;
 
     int iSendResult;
-    char arr[50];
+    char arr[10];
     //char recvbuf[DEFAULT_BUFLEN];
     //int recvbuflen = DEFAULT_BUFLEN;
 
@@ -96,7 +96,7 @@ int __cdecl main(void)
     // Receive until the peer shuts down the connection
     do {
 
-        iResult = recv(ClientSocket, arr, 50, 0);
+        iResult = recv(ClientSocket, arr, 10, 0);
         if (iResult > 0) {
             printf("Bytes received: %d\n", iResult);
 
