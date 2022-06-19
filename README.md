@@ -1,5 +1,5 @@
 # Описание
-Практическая работа по курсу Архитектура информационных систем. Вариант №2 
+Практическая работа по дисциплине Архитектура ИС. Вариант №2 "Робот, который закрашивает граффити"
 
 ## Содержание
 1. [doc](https://github.com/filka657/ArchitecturePZ/tree/main/doc)
@@ -15,5 +15,5 @@
 - [Схема KTC](https://github.com/filka657/ArchitecturePZ/blob/main/doc/%D0%A1%D1%85%D0%B5%D0%BC%D0%B0%20%D0%9A%D0%A2%D0%A1.png)
 
 ## source
-- [shablon](https://github.com/filka657/ArchitecturePZ/tree/main/source/shablon)
-- [automat](https://github.com/filka657/ArchitecturePZ/tree/main/source/automat)
+- [Client](https://github.com/filka657/ArchitecturePZ/tree/main/source/kod/Client)
+- [Server](https://github.com/filka657/ArchitecturePZ/tree/main/source/kod/Server)
